@@ -39,7 +39,7 @@ on slow connections.
 Built-in ad blocker removes annoying ads and speeds up page loading.
 
 🌐 Multi-Platform
-Available on Windows, Mac, Linux, Android, and iOS. Sync across all devices.
+Available on Windows
 
 🔓 Open Source
 Fully auditable code. No hidden backdoors or secret tracking.
