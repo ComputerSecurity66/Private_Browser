@@ -146,9 +146,9 @@ color 0A
 ## 📁 Project Structure
 
 ```text
-Secure-Private-Browsing/
+Private-Browsing/
 │
-├── SecurePrivateBrowsing.bat
+├── PrivateBrowser.bat
 └── README.md
 ```
 
