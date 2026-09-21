@@ -1,63 +1,171 @@
-# Private_Browser
-PRIVATE BROWSER - RECLAIM YOUR ONLINE PRIVACY
+# 🔐 Secure Private Browsing Launcher
 
-What is Private Browser?
+A lightweight Windows Batch (`.bat`) utility that provides a simple menu for launching popular web browsers directly in their private browsing modes.
 
-Private Browser is a free, open-source web browser designed from the ground 
-up for privacy and security. Unlike mainstream browsers that track your every 
-move, Private Browser keeps your browsing activity completely private.
+The tool is designed for quick access to privacy-focused browser sessions without manually opening the browser and selecting private/incognito mode.
 
-Why Use Private Browser?
+## 🚀 Features
 
-Your online privacy matters. Every day, corporations and advertisers track 
-your browsing habits, collect your personal data, and sell it to the highest 
-bidder. Private Browser stops this by:
+* 🌐 Google Chrome — Incognito Mode
+* 🛡️ Microsoft Edge — InPrivate Mode
+* 🦊 Mozilla Firefox — Private Window
+* 🔴 Opera — Private Mode
+* 🦁 Brave — Incognito Mode
+* 🧅 Tor Browser — Launches Tor Browser
+* 🔗 Open a website directly
+* 📄 Launch a blank private browsing window
+* 🔙 Simple menu navigation
+* 💻 Windows Batch Script — no additional software required
 
-✓ Blocking all tracking scripts and cookies
-✓ Encrypting all your connections (HTTPS everywhere)
-✓ Hiding your real IP address
-✓ Preventing website fingerprinting
-✓ Removing ads and malicious content
-✓ Never storing your browsing history
-✓ Never collecting your personal data
+## 📋 Supported Browsers
 
-Key Features:
+| Browser         | Private Mode   |
+| --------------- | -------------- |
+| Google Chrome   | Incognito      |
+| Microsoft Edge  | InPrivate      |
+| Mozilla Firefox | Private Window |
+| Opera           | Private        |
+| Brave           | Incognito      |
+| Tor Browser     | Tor Browser    |
 
-🔒 Zero Tracking
-No tracking pixels, no cookies, no data collection. Your browsing is 
-completely private.
+## 🖥️ Requirements
 
-🛡️ Advanced Security
-Military-grade encryption, malware protection, and phishing detection keep 
-you safe from online threats.
+* Windows 10 or Windows 11
+* At least one supported browser installed
+* `.bat` file execution enabled
 
-⚡ Lightning Fast
-Optimized performance means faster page loads and smoother browsing, even 
-on slow connections.
+For Tor Browser, the script expects the Tor Browser shortcut to be located at:
 
-🎯 Ad Blocking
-Built-in ad blocker removes annoying ads and speeds up page loading.
+```text
+C:\Users\YOUR_USERNAME\Desktop\Tor Browser\Start Tor Browser.lnk
+```
 
-🌐 Multi-Platform
-Available on Windows
+If your Tor Browser shortcut is located somewhere else, update the path in the batch file.
 
-🔓 Open Source
-Fully auditable code. No hidden backdoors or secret tracking.
+## ⚙️ How to Use
 
-Who Should Use Private Browser?
+1. Download or clone this repository.
+2. Open the `.bat` file.
+3. Select a browser from the menu.
+4. Choose one of the available options:
 
-• Privacy-conscious individuals
-• Journalists and activists
-• Business professionals
-• Anyone tired of being tracked online
-• People in countries with internet censorship
-• Students and researchers
-• Remote workers
+   * **Enter website address**
+   * **Continue without web address**
+   * **Back**
+5. The selected browser will launch in its private browsing mode.
 
-Get Started Today
+Example:
 
-Download Private Browser for free and start browsing privately. No account 
-required. No registration needed. Just download, install, and enjoy 
-complete privacy.
+```text
+======================================
+      SECURE IN PRIVATE BROWSING
+======================================
+1. Google chrome
+2. Microsoft Edge
+3. FireFox
+4. Opera
+5. Brave
+6. Tor
+0. Exit
+======================================
 
-Your privacy is not a luxury. It's a right.
+Choose a browser (0-6):
+```
+
+## 🔗 Opening a Website
+
+Select:
+
+```text
+1. Enter website address
+```
+
+Then enter a URL such as:
+
+```text
+google.com
+```
+
+The selected browser will open the address using its private browsing mode.
+
+## 📄 Blank Private Window
+
+Select:
+
+```text
+2. Continue without web address (Blank Page)
+```
+
+This launches the selected browser without specifying a website.
+
+## 🧅 Tor Browser
+
+Tor Browser is handled differently because the script launches it through a Windows shortcut.
+
+The default path is:
+
+```text
+C:\Users\%USERNAME%\Desktop\Tor Browser\Start Tor Browser.lnk
+```
+
+If your shortcut is stored elsewhere, modify the Tor Browser path inside the batch file.
+
+When using the website option with Tor Browser, the script opens Tor and asks you to enter the website manually.
+
+## 🔒 Privacy Note
+
+Private/incognito browsing primarily prevents the browser from retaining certain local browsing information such as browsing history, cookies, and site data after the private session ends.
+
+It does **not** make you completely anonymous or invisible online. Websites, network administrators, internet service providers, and other parties may still be able to observe or log network activity depending on the environment.
+
+Tor Browser provides additional privacy and anonymity protections, but it also does not guarantee complete anonymity.
+
+## 🛠️ Customization
+
+You can customize the script by editing the browser commands.
+
+For example:
+
+```bat
+set "browser_name=Google Chrome"
+set "browser_cmd=chrome.exe --incognito"
+```
+
+You can also change the command prompt color:
+
+```bat
+color 0B
+```
+
+For a classic hacker-green appearance:
+
+```bat
+color 0A
+```
+
+## 📁 Project Structure
+
+```text
+Secure-Private-Browsing/
+│
+├── SecurePrivateBrowsing.bat
+└── README.md
+```
+
+## ⚠️ Disclaimer
+
+This project is provided for legitimate privacy, security, and convenience purposes.
+
+The author does not guarantee complete anonymity, privacy, or security when using private browsing modes.
+
+Users are responsible for complying with applicable laws, network policies, and the terms of service of the websites and browsers they use.
+
+## 📜 License
+
+Computer Security Latest Proprietary License Copyright © 2026 VALOR. All Rights Reserved.
+
+This project is proprietary software and is not open source.
+
+Use, copying, modification, redistribution, publication, sublicensing, commercial use, and creation of derivative works are prohibited unless explicitly authorized in writing by the copyright holder.
+
+See the LICENSE file for the complete license terms.
